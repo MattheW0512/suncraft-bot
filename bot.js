@@ -24,6 +24,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'cica') {
+    	message.reply('kutya');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'bitch') {
     	message.reply('lasagna');
   	}
