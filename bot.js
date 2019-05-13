@@ -18,12 +18,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Cseuz') {
-    	message.reply('buzi');
-  	}
-});
-
-client.on('message', message => {
     if (message.content === 'anyád') {
     	message.reply('kurva');
   	}
