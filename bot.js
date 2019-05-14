@@ -12,6 +12,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '...') {
+    	message.reply('...');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'kurva') {
     	message.reply('anyád');
   	}
