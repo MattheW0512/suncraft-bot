@@ -17,7 +17,7 @@ user = message.member
 const otherServer = client.guilds.get("733759129511919717"); 
 const role =server.roles.find("name", "teszt2");
 server.user.addRole(role);
-}})
+}});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
