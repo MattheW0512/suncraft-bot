@@ -6,40 +6,18 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
-
-client.on('message', message => {
     if (message.content === '...') {
     	message.reply('...');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'kurva') {
-    	message.reply('anyád');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'anyád') {
-    	message.reply('kurva');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'cica') {
-    	message.reply('kutya');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'bitch') {
-    	message.reply('lasagna');
-  	}
-});
+if (message.member.roles.find(r => r.name === "teszt")){
+user = message.member        
+const otherServer = client.guilds.get("733759129511919717"); 
+const role =server.roles.find('name', 'Role');
+server.user.addRole("teszt2");
+}})
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
