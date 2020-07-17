@@ -15,7 +15,7 @@ client.on('message', message => {
     if (message.content === 'xd') {
     	message.reply('...');
   	}
-});
+})
 
 client.on('message', message => {
     if (message.member.roles.find(role => role.name === "teszt")){
