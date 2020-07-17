@@ -18,10 +18,10 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.member.roles.find(r => r.name === "teszt")){
-        user = message.member        
-        const otherServer = client.guilds.get("733759129511919717"); 
-        const role =server.roles.find('name', 'teszt2');
+    if (message.member.roles.find(role => role.name === "teszt")){
+        user = message.member
+        const guild = client.guilds.get("733759129511919717");
+        const role =guild.roles.find('name', 'teszt2');
         server.user.addRole(role);
 }})
 
