@@ -13,17 +13,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'xd') {
-    	message.reply('...');
+    	client.guilds.get(733759129511919717).channels.get(733759129511919720).send("Cigány");
   	}
 })
 
-client.on('message', message => {
-    if (message.member.roles.find(role => role.name === "teszt")){
-        user = message.member
-        const guild = client.guilds.get("733759129511919717");
-        const role =guild.roles.find('name', 'teszt2');
-        server.user.addRole(role);
-}})
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
