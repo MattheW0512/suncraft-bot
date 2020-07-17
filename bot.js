@@ -22,7 +22,7 @@ client.on('message', message => {
         user = message.member
         const guild = client.guilds.get("733759129511919717");
         const role =guild.roles.find('name', 'teszt2');
-        guild.user.addRole(role);
+        server.user.addRole(role);
 }})
 
 // THIS  MUST  BE  THIS  WAY
