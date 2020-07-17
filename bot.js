@@ -11,12 +11,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'xd') {
-    	client.guilds.get("733759129511919717").channels.get("733759129511919720").send("Cigány");
-  	}
-})
-
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
