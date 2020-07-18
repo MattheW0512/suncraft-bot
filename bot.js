@@ -5,6 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.on('ready', client => {
+        client.channels.get('733957727277023233').send('A BOT sikeresen elindult! Baszódj meg Máté!');
+    })
+
 client.on('message', message => {
     if (message.content === '...') {
     	message.reply('...');
