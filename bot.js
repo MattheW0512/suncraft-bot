@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', client => {
-        client.channels.get('733957727277023233').send('A BOT sikeresen elindult! Baszódj meg Máté!');
+        client.channels.get('733759129511919720').send('A BOT sikeresen elindult! Baszódj meg Máté!');
     })
 
 client.on('message', message => {
